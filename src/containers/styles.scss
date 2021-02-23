@@ -3,4 +3,7 @@
     max-width: 1200px;
     width: 100%;
     padding: 0 30px;
+    @media (max-width: 575.98px) {
+        width: auto;
+    }
 }

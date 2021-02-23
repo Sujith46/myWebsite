@@ -30,6 +30,11 @@
         overflow: hidden;
         border-radius: 50%;
     }
+    @media (max-width: 575.98px) {
+        flex-direction: column;
+        text-align: center;
+    }
+    
 }
 
 .aboutOverview {
@@ -44,6 +49,9 @@
         padding: 40px 100px 0 100px;
         h3 {
             text-align: center;
+        }
+        @media (max-width: 575.98px) { 
+            padding: 40px 40px 0 40px;
         }
     }
 }
