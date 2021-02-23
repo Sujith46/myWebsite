@@ -1,7 +1,49 @@
+.fluid {
+    background-color:  #191d2c;
+    padding: 60px 0;
+    h1 {
+        color: white;
+    }
+    p {
+        color: #B9B9B9;
+    }
+}
 .aboutContainer {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    .aboutContent {
+        flex: 4;
+        i {
+            color: white;
+        }
+    }
     p {
         max-width: 680px;
+        margin-bottom: 40px;
+    }
+    .imageRadius {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+}
+
+.aboutOverview {
+    padding: 60px 0;
+    h2{
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    .devContainer {
+        padding: 40px 100px 0 100px;
+        h3 {
+            text-align: center;
+        }
     }
 }

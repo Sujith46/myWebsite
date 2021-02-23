@@ -1,7 +1,7 @@
 import React from "react"
 import "../globalstyles/style.scss"
 
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Icons from "../components/icons"
 import Typewriter from "typewriter-effect"

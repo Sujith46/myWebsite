@@ -1,3 +1,12 @@
+.logoWrapper{
+  flex: 1;
+  .logo {
+      width: 35px;
+  }
+}
+.navigation {
+  display: flex;
+}
 .navbar-wrapper {
   height: 100px;
   background-color: #191d2c;
@@ -7,7 +16,10 @@
   justify-content: flex-end;
   z-index: 1;
   .links {
-    text-align: right;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     .current {
       color:  #edff7b;
     }
