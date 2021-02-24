@@ -1,7 +1,7 @@
-import React from "react"
+import React, {useState} from "react"
 import "../globalstyles/style.scss"
 
-import { graphql } from "gatsby"
+import { graphql, navigate } from "gatsby"
 import Img from "gatsby-image"
 import Icons from "../components/icons"
 import Typewriter from "typewriter-effect"
@@ -84,6 +84,15 @@ export default function Home({ data }) {
   // el.addEventListener("mouseup", function () {
   //   el.style.transform = "perspective(500px) scale(1.1) rotateX(0) rotateY(0)"
   // })
+  
+  // const [modal, showModal] = useState(false);
+
+  // const popUp = () => {
+  //   showModal(true)
+  // }
+  const moveTo = () => {
+    navigate('/contact');
+  }
 
   return (
     <div>
@@ -93,7 +102,7 @@ export default function Home({ data }) {
           <div className="hero-container">
             <div className="content">
               <h1 className="typewriter-heading">{type}</h1>
-              <button className="submit">Let's connect</button>
+              <button className="submit" onClick={() => moveTo()}>Let's connect</button>
               <Icons />
             </div>
             <div className="image-wrapper" id="image-wrapper">
@@ -106,6 +115,9 @@ export default function Home({ data }) {
               <div className="light-yellow-box"></div>
             </div>
           </div>
+          {/* <div className={`modalWrapper modalShow-${modal}`}>
+            <p>ASDASDASDDASDA</p>
+          </div> */}
         </div>
       </Layout>
     </div>

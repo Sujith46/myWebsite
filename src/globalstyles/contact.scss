@@ -1,0 +1,48 @@
+.contactPage {
+    height: 80vh;
+}
+
+.formWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+    .form {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0;
+        width: 400px;
+        img {
+            width: 18px;
+            margin-right: 20px;
+        }
+        label {
+            display: flex;
+            flex-direction: row;
+        }
+        .field {
+            border: none;
+            padding: 20px;
+            width: 100%;
+        }
+        .fieldWrapper {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid grey;
+        }
+    }
+    .submit {
+        background-color: #edff7b;
+        padding: 0.8em 1.2em;
+        cursor: pointer;
+        border: none;
+        &:hover {
+          background-color: #f4ffad;;
+          transition: 0.2s ease-in;
+        }
+        &.custom {
+            margin-top: 20px;
+        }
+      }
+}

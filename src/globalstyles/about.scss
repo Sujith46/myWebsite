@@ -7,6 +7,13 @@
     p {
         color: #B9B9B9;
     }
+    @media (max-width: 575.98px) {
+        padding-top: 20px;
+        padding-bottom: 60px;
+        h1 {
+            font-size: 36px;
+        }
+    }
 }
 .aboutContainer {
     max-width: 1200px;
@@ -22,6 +29,14 @@
     p {
         max-width: 680px;
         margin-bottom: 40px;
+    }
+    .aboutImage {
+        @media (max-width: 575.98px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+        }
     }
     .imageRadius {
         width: 250px;
@@ -44,6 +59,7 @@
     }
     p {
         text-align: center;
+        color: gray;
     }
     .devContainer {
         padding: 40px 100px 0 100px;
@@ -51,7 +67,7 @@
             text-align: center;
         }
         @media (max-width: 575.98px) { 
-            padding: 40px 40px 0 40px;
+            padding: 0;
         }
     }
 }

@@ -6,6 +6,7 @@ import "../globalstyles/about.scss"
 import Container from "../containers"
 import Development from '../components/development/index'
 import Design from "../components/design"
+import {graphql} from 'gatsby'
 
 export default function About({data}) {
   return (
