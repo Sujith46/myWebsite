@@ -105,6 +105,7 @@ body {
       right: 100px;
       box-shadow: 2px 6px 20px #00000099;
       z-index: 2;
+      perspective: 40px;
       @media (max-width: 575.98px) {
         position: relative;
         top: 0;
@@ -130,17 +131,19 @@ body {
         // margin-left: 30px;
         // margin-top: 5px;
         //keyframes
-        @keyframes floating {
-          0% {
-            transform: translate(0, 0px);
-          }
-          50% {
-            transform: translate(0, 15px);
-          }
-          100% {
-            transform: translate(0, -0px);
-          }
-        }
+        width: 350px;
+        height: auto;
+        // @keyframes floating {
+        //   0% {
+        //     transform: translate(0, 0px);
+        //   }
+        //   50% {
+        //     transform: translate(0, 15px);
+        //   }
+        //   100% {
+        //     transform: translate(0, -0px);
+        //   }
+        // }
       }
     }
     .light-yellow-box {

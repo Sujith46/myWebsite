@@ -12,7 +12,6 @@ export default function Home({ data }) {
   const type = (
     <Typewriter
       options={{
-        // strings: [ "Hey there, iam Sujith", "Designer, Front-end developer" ],
         strings: [
           `Hey there,<br> I am Sujith`,
           `Designer,<br> Front-end developer`,
@@ -23,73 +22,71 @@ export default function Home({ data }) {
       }}
     />
   )
-  // let el = document.getElementById("sujith-img")
-  // console.log(el)
-  // const height = el.height
-  // const width = el.width
+  // let container = document.getElementById("image-wrapper")
+  // var inner = document.getElementById('sujith-img');
+  // console.log(container)
 
-  // /*
-  //  * Add a listener for mousemove event
-  //  * Which will trigger function 'handleMove'
-  //  * On mousemove
-  //  */
-  // el.addEventListener("mousemove", handleMove)
+  // var mouse = {
+  //   _x: 0,
+  //   _y: 0,
+  //   x: 0,
+  //   y: 0,
+  //   updatePosition: function(event) {
+  //     var e = event || window.event;
+  //     this.x = e.clientX - this._x;
+  //     this.y = (e.clientY - this._y) * -1;
+  //   },
+  //   setOrigin: function(e) {
+  //     this._x = e.offsetLeft + Math.floor(e.offsetWidth/2);
+  //     this._y = e.offsetTop + Math.floor(e.offsetHeight/2);
+  //   },
+  //   show: function() { return '(' + this.x + ', ' + this.y + ')'; }
+  // }
+  // Track the mouse position relative to the center of the container.
+  // mouse.setOrigin(container);
 
-  // /* Define function a */
-  // function handleMove(e) {
-  //   /*
-  //    * Get position of mouse cursor
-  //    * With respect to the element
-  //    * On mouseover
-  //    */
-  //   /* Store the x position */
-  //   const xVal = e.layerX
-  //   /* Store the y position */
-  //   const yVal = e.layerY
-
-  //   /*
-  //    * Calculate rotation valuee along the Y-axis
-  //    * Here the multiplier 20 is to
-  //    * Control the rotation
-  //    * You can change the value and see the results
-  //    */
-  //   const yRotation = 20 * ((xVal - width / 2) / width)
-
-  //   /* Calculate the rotation along the X-axis */
-  //   const xRotation = -20 * ((yVal - height / 2) / height)
-
-  //   /* Generate string for CSS transform property */
-  //   const string =
-  //     "perspective(500px) scale(1.1) rotateX(" +
-  //     xRotation +
-  //     "deg) rotateY(" +
-  //     yRotation +
-  //     "deg)"
-
-  //   /* Apply the calculated transformation */
-  //   el.style.transform = string
+  // const onMouseEnterHandler = (event) => {
+  //   // update(event)
+  //   console(event)
   // }
 
-  // /* Add listener for mouseout event, remove the rotation */
-  // el.addEventListener("mouseout", function () {
-  //   el.style.transform = "perspective(500px) scale(1) rotateX(0) rotateY(0)"
-  // })
+  // const onMouseLeaveHandler = () => {
+  //   inner.style = "";
+  // }
 
-  // /* Add listener for mousedown event, to simulate click */
-  // el.addEventListener("mousedown", function () {
-  //   el.style.transform = "perspective(500px) scale(0.9) rotateX(0) rotateY(0)"
-  // })
+  // const onMouseMoveHanlder = (event) => {
+  //   if(isTimeToUpdate()) {
+  //     // update(event);
+  //     console(event)
+  //   }
+  // }
+  // container.onmouseenter = onMouseEnterHandler;
+  // container.onmouseleave = onMouseLeaveHandler;
+  // container.onmousemove = onMouseMoveHanlder;
 
-  // /* Add listener for mouseup, simulate release of mouse click */
-  // el.addEventListener("mouseup", function () {
-  //   el.style.transform = "perspective(500px) scale(1.1) rotateX(0) rotateY(0)"
-  // })
+  // var counter = 0;
+  // var updateRate = 10;
+  // var isTimeToUpdate = function() {
+  //   return counter++ % updateRate === 0;
+  // };
+
+  // const update = (event) => {
+  //   mouse.updatePosition(event);
+  //   updateTransformStyle(
+  //     (mouse.y / inner.offsetHeight/2).toFixed(2),
+  //     (mouse.x / inner.offsetWidth/2).toFixed(2)
+  //   );
+  // };
   
-  // const [modal, showModal] = useState(false);
+  // var updateTransformStyle = function(x, y) {
+  //   var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
+  //   inner.style.transform = style;
+  //   inner.style.webkitTransform = style;
+  //   inner.style.mozTransform = style;
+  //   inner.style.msTransform = style;
+  //   inner.style.oTransform = style;
+  // };
 
-  // const popUp = () => {
-  //   showModal(true)
-  // }
   const moveTo = () => {
     navigate('/contact');
   }
