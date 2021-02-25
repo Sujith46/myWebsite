@@ -6,9 +6,14 @@ import "../globalstyles/about.scss"
 import Container from "../containers"
 import Development from '../components/development/index'
 import Design from "../components/design"
-import {graphql} from 'gatsby'
+import {graphql, navigate} from 'gatsby'
 
 export default function About({data}) {
+
+  const moveTo = () => {
+    navigate('/contact');
+  }
+
   return (
     <Layout>
       <div className="fluid">
@@ -47,6 +52,10 @@ export default function About({data}) {
             <div className="tools">
               <Design />
             </div>
+          </div>
+          <div className="connect">
+            <p>Feel free to reach out if you're looking for a developer or a designer, have a question, or just want to connect.</p>
+            <button className="submit" onClick={() => moveTo()}>Let's connect</button>
           </div>
         </div>
       </Container>

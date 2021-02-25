@@ -45,7 +45,7 @@
             justify-content: center;
             margin-top: 40px;
         }
-        @media (max-width: 767.98px) {
+        @media (min-width: 576px) and (max-width: 767.98px) {
             flex: 2;
             display: flex;
             align-items: center;
@@ -83,5 +83,18 @@
         @media (max-width: 575.98px) { 
             padding: 0;
         }
+    }
+    .connect {
+        text-align: center;
+    }
+}
+.submit {
+    background-color: #edff7b;
+    padding: 0.8em 1.2em;
+    cursor: pointer;
+    border: none;
+    &:hover {
+      background-color: #565e26;
+      transition: 4s ease-in;
     }
 }
