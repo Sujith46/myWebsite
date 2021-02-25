@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import HomeLogo from '../../images/homelogo.svg'
+import SLogo from '../../images/s.svg'
 import "./navbar.scss"
 import Container from "../../containers"
 
@@ -10,7 +10,7 @@ function NavBar() {
       <Container>
         <div className="navigation">
           <div className="logoWrapper">
-            <img className="logo" src={HomeLogo} alt="home logo"></img>
+            <img className="logo" src={SLogo} alt="home logo"></img>
           </div>
           <div className="links">
             <Link to="/" activeClassName="current">Home</Link>
