@@ -30,20 +30,13 @@ body {
   div {
     position: relative;
     .dark-blue-skewed {
-      // border-bottom: 80vh solid #191d2c;
-      // border-right: calc(100vw) solid transparent;
-      // transform: scaleY(-1.5);
+      padding: 40px 0;
       background-color: #191d2c;
       width: 100%;
-      height: calc(100vh - 200px);
+      z-index: -2;
       position: relative;
-      // .modalWrapper {
-      //   display: none;
-      // }
-      // .modalShow-true {
-      //   display: block;
-      // }
       .hero-container {
+        display: flex;
         margin: 0 auto;
         max-width: 1200px;
         // width: 100%;
@@ -52,6 +45,7 @@ body {
         @media (max-width: 575.98px) {
           padding: 30px 20px;
           text-align: center;
+          flex-direction: column;
           h1 {
             font-size: 36px;
           }
@@ -69,16 +63,15 @@ body {
       }
     }
     .content {
-      position: absolute;
       color: white;
-      top: 15%;
+      flex: 1;
+      padding-left: 60px;
       @media (max-width: 575.98px) {
         display: block;
         position: relative;
-        top: 0;
         margin-bottom: 60px;
+        padding: 0;
       }
-      // left: 12%;
       .typewriter-heading {
         height: 160px;
 
@@ -98,51 +91,19 @@ body {
       }
     }
     .image-wrapper {
-      width: 350px;
-      display: inline-block;
-      position: absolute;
-      top: 50px;
-      right: 100px;
-      box-shadow: 2px 6px 20px #00000099;
-      z-index: 2;
-      perspective: 40px;
+      max-width: 350px;
+      flex: 1;
+      padding-right: 60px;
       @media (max-width: 575.98px) {
-        position: relative;
-        top: 0;
-        right: 0;
+        padding: 0;
+        max-width: none;
        }
        @media(min-width: 576px) and (max-width: 767.98px) { 
         width: 275px;
         right: 95px;
        }
-      // -webkit-perspective: 1000;
-      // -webkit-backface-visibility: hidden;
-      // -webkit-transform: translate3d(0, 0, 0);
-      //animation
       .sujith-img {
-        // animation-name: floating;
-        // animation-duration: 3s;
-        // animation-iteration-count: infinite;
-        // animation-timing-function: ease-in-out;
-        // transform: translate3d(0px, 0px, 0px);
-        // transition: transform .5 ease-in-out;
-
-        // margin-left: 30px;
-        // margin-top: 5px;
-        //keyframes
-        width: 350px;
         height: auto;
-        // @keyframes floating {
-        //   0% {
-        //     transform: translate(0, 0px);
-        //   }
-        //   50% {
-        //     transform: translate(0, 15px);
-        //   }
-        //   100% {
-        //     transform: translate(0, -0px);
-        //   }
-        // }
       }
     }
     .light-yellow-box {
@@ -153,6 +114,7 @@ body {
       top: 250px;
       right: -26px;
       z-index: -1;
+      display: none;
       @media (max-width: 575.98px) {
         display: none;
       }
