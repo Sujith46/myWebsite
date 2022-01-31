@@ -6,6 +6,7 @@ import Img from "gatsby-image"
 import Icons from "../components/icons"
 import Typewriter from "typewriter-effect"
 import Layout from "../containers/Layout/index"
+import Seo from "../components/seo"
 
 
 export default function Home({ data }) {
@@ -29,7 +30,7 @@ export default function Home({ data }) {
 
   return (
     <div>
-     
+     <Seo />
       <Layout>
         <div className="dark-blue-skewed">
           <div className="hero-container">
