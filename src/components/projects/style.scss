@@ -1,0 +1,37 @@
+.projects-wrapper {
+    background-color: #f5f5dc;
+    padding: 40px 0;
+    .project-container {
+        display: flex;
+        &:nth-child(even) {
+            flex-direction: row;
+        }
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+        margin: 80px 0;
+        padding: 20px;
+        box-shadow: 0px 1px 10px 0px #a9a9a9;
+        &:hover {
+            box-shadow: -1px -1px 100px 0px #a9a9a9;
+            transition: 0.6s;
+        }
+        // box-shadow: -1px -1px 100px 0px rgba(84, 84, 84, 60%);
+        .project-thumb {
+            width: 500px;
+        }
+        .project-content {
+            margin-left: 40px;
+            .sub-text {
+                max-width: calc(100% - 100px);
+            }
+        }
+        .submit {
+            margin-right: 20px;
+        }
+        .outline {
+            background-color: transparent;
+            border: 1px solid #191d2c;
+        }
+    }
+}
