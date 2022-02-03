@@ -7,6 +7,7 @@ import Icons from "../components/icons"
 import Typewriter from "typewriter-effect"
 import Layout from "../containers/Layout/index"
 import Seo from "../components/seo"
+import Projects from "../components/projects/projects"
 
 
 export default function Home({ data }) {
@@ -50,6 +51,7 @@ export default function Home({ data }) {
             </div>
           </div>
         </div>
+        <Projects />
       </Layout>
     </div>
   )

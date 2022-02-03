@@ -33,7 +33,6 @@ body {
       padding: 40px 0;
       background-color: #191d2c;
       width: 100%;
-      z-index: -2;
       position: relative;
       .hero-container {
         display: flex;
@@ -65,7 +64,6 @@ body {
     .content {
       color: white;
       flex: 1;
-      padding-left: 60px;
       @media (max-width: 575.98px) {
         display: block;
         position: relative;
@@ -93,7 +91,6 @@ body {
     .image-wrapper {
       max-width: 350px;
       flex: 1;
-      padding-right: 60px;
       @media (max-width: 575.98px) {
         padding: 0;
         max-width: none;
@@ -125,5 +122,13 @@ body {
       }
     }
   }
- 
+  .secondary {
+    background-color: #191d2c;
+    color: white;
+    margin: 20px 0;
+    &:hover {
+      background-color: #191d2c;
+      transition: 0.2s ease-in;
+    }
+  }
 }
